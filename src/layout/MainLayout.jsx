@@ -8,9 +8,12 @@ const MainLayout = () => {
 
             <Navbar></Navbar>
 
-            <main className='pt-20'>
+            <main className='pt-[63px] md:pt-[68px]'>
                 <Outlet></Outlet>
             </main>
+
+
+            
 
         </>
     );

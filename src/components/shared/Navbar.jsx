@@ -23,8 +23,8 @@ const Navbar = () => {
 
 
     return (
-        <header className="fixed top-0 left-0 z-50 w-full bg-white/95 shadow-sm backdrop-blur-md">
-            <nav className="relative mx-auto flex min-h-[66px] w-[94%] items-center justify-between gap-3 md:w-[92%] lg:w-[90%]">
+        <header className="fixed top-0 left-0 z-50 w-full shadow-sm bg-white/95  backdrop-blur-md">
+          <nav className="relative mx-auto flex min-h-[65px] items-center justify-between gap-3 w-[94%] md:min-h-[70px] md:w-[92%] lg:w-[90%]">
 
                 {/* Logo */}
                 <NavLink
@@ -66,7 +66,7 @@ const Navbar = () => {
                     href="https://www.rhs.org.uk/plants"
                     target="_blank"
                     rel="noreferrer"
-                    className="hidden shrink-0 items-center justify-center gap-2 rounded-md bg-gradient-to-r from-[#166534] to-[#65A30D] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md md:inline-flex"
+                    className="hidden shrink-0 items-center justify-center gap-2 rounded-md bg-gradient-to-r from-[#166534] to-[#65A30D] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md md:inline-flex"
                 >
                     <TreePine size={18} />
                     <span>Explore Plants</span>
