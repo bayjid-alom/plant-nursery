@@ -12,7 +12,7 @@ import {
 const Banner = () => {
     return (
         <section
-            className="relative flex min-h-[700px] items-center overflow-hidden bg-cover bg-center bg-no-repeat py-24 md:min-h-[650px] lg:min-h-[750px]"
+            className="relative flex min-h-[700px] items-center overflow-hidden bg-cover bg-center bg-no-repeat py-24 md:min-h-[650px] lg:min-h-[750px] mb-15 md:mb-24 lg:mb-30"
             style={{
                 backgroundImage: `url('https://cdn.prod.website-files.com/65eede53df668d7015c0bd8c/69e7135ea159c5e96b595393_69e604503e9b07a8b07ef97e_6974d541ed606e69394365ab_introduction-9d851d2f.webp')`
             }}

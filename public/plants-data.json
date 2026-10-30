@@ -160,5 +160,149 @@
         "lightRequirement": "Bright Indirect Light",
         "waterFrequency": "Weekly",
         "stock": 24
+    },
+    {
+        "plantId": 10,
+        "plantName": "Rubber Plant",
+        "scientificName": "Ficus elastica",
+        "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=800",
+        "description": "Rubber Plant is a beautiful indoor tree with large, glossy leaves. It grows well in bright indirect light and adds a tropical touch to any interior.",
+        "price": 950,
+        "rating": 4.8,
+        "category": "Indoor Trees",
+        "tags": [
+            "Tropical",
+            "Decorative"
+        ],
+        "careLevel": "Easy",
+        "lightRequirement": "Bright Indirect Light",
+        "waterFrequency": "Weekly",
+        "stock": 18
+    },
+    {
+        "plantId": 11,
+        "plantName": "Fiddle Leaf Fig",
+        "scientificName": "Ficus lyrata",
+        "image": "https://images.unsplash.com/photo-1597055181300-e3633a917c5a?w=800",
+        "description": "Fiddle Leaf Fig is a popular decorative indoor tree featuring large violin-shaped leaves. It looks stunning in modern living spaces.",
+        "price": 2200,
+        "rating": 4.9,
+        "category": "Indoor Trees",
+        "tags": [
+            "Decorative",
+            "Tropical"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Bright Indirect Light",
+        "waterFrequency": "Weekly",
+        "stock": 12
+    },
+    {
+        "plantId": 12,
+        "plantName": "Money Tree",
+        "scientificName": "Pachira aquatica",
+        "image": "https://images.unsplash.com/photo-1612363148955-2c8b1e6b8e8d?w=800",
+        "description": "Money Tree is an attractive indoor plant with a braided trunk and bright green leaves. It is a wonderful decorative addition to homes and offices.",
+        "price": 1450,
+        "rating": 4.7,
+        "category": "Indoor Trees",
+        "tags": [
+            "Decorative",
+            "Air Purifying"
+        ],
+        "careLevel": "Easy",
+        "lightRequirement": "Bright Indirect Light",
+        "waterFrequency": "Weekly",
+        "stock": 20
+    },
+    {
+        "plantId": 13,
+        "plantName": "Lemon Tree",
+        "scientificName": "Citrus limon",
+        "image": "https://images.unsplash.com/photo-1590502593747-42a996133562?w=800",
+        "description": "Lemon Tree is a refreshing fruit tree with glossy green leaves and fragrant flowers. It grows best outdoors with plenty of sunlight.",
+        "price": 1200,
+        "rating": 4.8,
+        "category": "Fruit Trees",
+        "tags": [
+            "Fruit Bearing",
+            "Outdoor"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Full Sunlight",
+        "waterFrequency": "Twice Weekly",
+        "stock": 15
+    },
+    {
+        "plantId": 14,
+        "plantName": "Mango Tree",
+        "scientificName": "Mangifera indica",
+        "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=800",
+        "description": "Mango Tree is a popular tropical fruit tree known for its delicious fruits and lush green foliage. It thrives in warm climates and sunny locations.",
+        "price": 1800,
+        "rating": 4.9,
+        "category": "Fruit Trees",
+        "tags": [
+            "Fruit Bearing",
+            "Tropical"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Full Sunlight",
+        "waterFrequency": "Twice Weekly",
+        "stock": 14
+    },
+    {
+        "plantId": 15,
+        "plantName": "Neem Tree",
+        "scientificName": "Azadirachta indica",
+        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800",
+        "description": "Neem Tree is a hardy evergreen tree with dense foliage. It grows well outdoors and is widely appreciated for its traditional uses.",
+        "price": 750,
+        "rating": 4.7,
+        "category": "Outdoor Trees",
+        "tags": [
+            "Evergreen",
+            "Low Maintenance"
+        ],
+        "careLevel": "Easy",
+        "lightRequirement": "Full Sunlight",
+        "waterFrequency": "When Topsoil Dries",
+        "stock": 25
+    },
+    {
+        "plantId": 16,
+        "plantName": "Cherry Blossom",
+        "scientificName": "Prunus serrulata",
+        "image": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800",
+        "description": "Cherry Blossom is a beautiful ornamental tree famous for its stunning pink and white flowers. It adds elegance and seasonal beauty to gardens.",
+        "price": 2500,
+        "rating": 4.9,
+        "category": "Flowering Trees",
+        "tags": [
+            "Flowering",
+            "Decorative"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Full Sunlight",
+        "waterFrequency": "Weekly",
+        "stock": 8
+    },
+    {
+        "plantId": 17,
+        "plantName": "Bonsai Tree",
+        "scientificName": "Ficus microcarpa",
+        "image": "https://images.unsplash.com/photo-1576675784201-0e142b423952?w=800",
+        "description": "Bonsai Tree is a miniature decorative tree carefully shaped to create a natural artistic appearance. It is perfect for desks, shelves, and indoor decoration.",
+        "price": 1600,
+        "rating": 4.8,
+        "category": "Decorative Trees",
+        "tags": [
+            "Miniature",
+            "Decorative"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Bright Indirect Light",
+        "waterFrequency": "When Topsoil Dries",
+        "stock": 10
     }
 ]

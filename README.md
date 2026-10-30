@@ -1,3 +1,3 @@
 ## Plant Nursery
 
-https://plants-nursery.surge.sh/
+https://plant-nursery.surge.sh/
