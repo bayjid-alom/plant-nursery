@@ -8,7 +8,7 @@ const AllPlants = () => {
     const plants = use(plantsPromise);
 
     return (
-        <section className="all-plants w-[94%] md:w-[92%] lg:w-[90%] mx-auto mb-15 md:mb-24 lg:mb-30">
+        <section className="all-plants w-[94%] md:w-[92%] lg:w-[85%] mx-auto mb-15 md:mb-24 lg:mb-30">
 
             {/* Section Heading */}
             <div className="heading mb-10 text-center">

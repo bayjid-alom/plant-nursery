@@ -23,8 +23,8 @@ const Navbar = () => {
 
 
     return (
-        <header className="fixed top-0 left-0 z-50 w-full shadow-sm bg-white/95  backdrop-blur-md">
-          <nav className="relative mx-auto flex min-h-[65px] items-center justify-between gap-3 w-[94%] md:min-h-[70px] md:w-[92%] lg:w-[90%]">
+        <header className="fixed top-0 left-0 z-50 w-full shadow-sm bg-white/90  backdrop-blur-md">
+          <nav className="relative mx-auto flex min-h-[65px] items-center justify-between gap-3 w-[94%] md:min-h-[70px] md:w-[92%] lg:w-[85%]">
 
                 {/* Logo */}
                 <NavLink
