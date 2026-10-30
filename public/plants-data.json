@@ -183,7 +183,7 @@
         "plantId": 11,
         "plantName": "Fiddle Leaf Fig",
         "scientificName": "Ficus lyrata",
-        "image": "https://images.unsplash.com/photo-1597055181300-e3633a917c5a?w=800",
+        "image": "https://t3.ftcdn.net/jpg/21/67/78/84/360_F_2167788445_349hqajSfg83RKMXL63hqi25SwpUsdHc.jpg",
         "description": "Fiddle Leaf Fig is a popular decorative indoor tree featuring large violin-shaped leaves. It looks stunning in modern living spaces.",
         "price": 2200,
         "rating": 4.9,
@@ -201,7 +201,7 @@
         "plantId": 12,
         "plantName": "Money Tree",
         "scientificName": "Pachira aquatica",
-        "image": "https://images.unsplash.com/photo-1612363148955-2c8b1e6b8e8d?w=800",
+        "image": "https://assets.architecturaldigest.in/photos/67add6705fb6351d294fff55/16:9/w_1616,h_909,c_limit/cover%20image%20template%20(1).jpg",
         "description": "Money Tree is an attractive indoor plant with a braided trunk and bright green leaves. It is a wonderful decorative addition to homes and offices.",
         "price": 1450,
         "rating": 4.7,
@@ -219,7 +219,7 @@
         "plantId": 13,
         "plantName": "Lemon Tree",
         "scientificName": "Citrus limon",
-        "image": "https://images.unsplash.com/photo-1590502593747-42a996133562?w=800",
+        "image": "https://dengarden.com/.image/MjA4MTQ0MDU5MzU1NjM3Mzky/lemon-tree-spooh-from-getty-images-signature-canva.png?profile=w2560&ar=16-9",
         "description": "Lemon Tree is a refreshing fruit tree with glossy green leaves and fragrant flowers. It grows best outdoors with plenty of sunlight.",
         "price": 1200,
         "rating": 4.8,
@@ -237,7 +237,7 @@
         "plantId": 14,
         "plantName": "Mango Tree",
         "scientificName": "Mangifera indica",
-        "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=800",
+        "image": "https://thumbs.dreamstime.com/b/mango-tree-9742865.jpg",
         "description": "Mango Tree is a popular tropical fruit tree known for its delicious fruits and lush green foliage. It thrives in warm climates and sunny locations.",
         "price": 1800,
         "rating": 4.9,
@@ -291,7 +291,7 @@
         "plantId": 17,
         "plantName": "Bonsai Tree",
         "scientificName": "Ficus microcarpa",
-        "image": "https://images.unsplash.com/photo-1576675784201-0e142b423952?w=800",
+        "image": "https://i.pinimg.com/736x/10/9e/3f/109e3f4abf088c94172d0df9723e55cd.jpg",
         "description": "Bonsai Tree is a miniature decorative tree carefully shaped to create a natural artistic appearance. It is perfect for desks, shelves, and indoor decoration.",
         "price": 1600,
         "rating": 4.8,
@@ -304,5 +304,43 @@
         "lightRequirement": "Bright Indirect Light",
         "waterFrequency": "When Topsoil Dries",
         "stock": 10
+    },
+    {
+        "plantId": 18,
+        "plantName": "Guava Tree",
+        "scientificName": "Psidium guajava",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/073/843/718/small/lush-guava-orchard-a-bounty-of-green-fruit-in-a-tropical-garden-free-photo.jpg",
+        "description": "Guava is a tropical fruit tree known for its delicious fruits and evergreen foliage. It grows well in warm climates and can be planted in home gardens.",
+        "price": 650,
+        "rating": 4.8,
+        "category": "Fruit Tree",
+        "tags": [
+            "Fruit",
+            "Outdoor",
+            "Tropical"
+        ],
+        "careLevel": "Easy",
+        "lightRequirement": "Full Sun",
+        "waterFrequency": "2-3 times a week",
+        "stock": 25
+    },
+    {
+        "plantId": 19,
+        "plantName": "Coconut Tree",
+        "scientificName": "Cocos nucifera",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/002/224/360/small_2x/coconut-palm-tree-with-white-cloud-and-blue-sky-free-video.jpg",
+        "description": "The coconut tree is a tropical palm tree valued for its coconuts and graceful appearance. It thrives in sunny environments with warm temperatures and well-drained soil.",
+        "price": 1200,
+        "rating": 4.9,
+        "category": "Fruit Tree",
+        "tags": [
+            "Tropical",
+            "Outdoor",
+            "Fruit"
+        ],
+        "careLevel": "Moderate",
+        "lightRequirement": "Full Sun",
+        "waterFrequency": "3-4 times a week",
+        "stock": 15
     }
 ]

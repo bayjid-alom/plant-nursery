@@ -154,11 +154,11 @@ const PlantDetails = () => {
 
                         <div className="mt-5 flex flex-wrap items-center gap-3">
                             <button className="btn w-fit border-none bg-green-700 px-5 text-white hover:bg-green-800">
-                                Explore Care Guide
+                                Mark as Planted
                             </button>
 
                             <button className="btn w-fit border border-green-700 bg-white px-5 text-green-700 hover:bg-green-50">
-                                Find Similar Plants
+                                Add to Wishlist
                             </button>
                         </div>
                     </div>
