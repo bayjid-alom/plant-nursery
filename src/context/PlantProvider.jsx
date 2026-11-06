@@ -19,7 +19,7 @@ const PlantProvider = ({ children }) => {
         }
         else {
             setPlanted([...planted, currentPlant])
-            toast.success(`${currentPlant.plantName} added to your wishlist!`);
+            toast.success(`${currentPlant.plantName} added to your planted list!`);
         }
     }
 

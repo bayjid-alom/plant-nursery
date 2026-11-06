@@ -1,13 +1,41 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { PlantContext } from '../context/PlantProvider';
 import { Link } from 'react-router';
 import { MapPin, Droplets, Sun, Leaf, Star } from 'lucide-react';
 
-const PlantedTrees = () => {
+const PlantedTrees = ({ sortingType }) => {
 
     const { planted } = useContext(PlantContext);
+    const [filteredPlantedList, setFilteredPlantedList] = useState(planted);
+
+
+    useEffect(() => {
+        if (sortingType) {
+            if (sortingType === "rating") {
+                const sortedData = [...planted].sort((a, b) => a.rating - b.rating);
+                setFilteredPlantedList(sortedData)
+            }
+            else if (sortingType === "price") {
+                const sortedData = [...planted].sort((a, b) => a.price - b.price);
+                setFilteredPlantedList(sortedData)
+
+            }
+            else if (sortingType === "name") {
+                const sortedData = [...planted].sort((a, b) => a.plantName.localeCompare(b.plantName)
+                );
+                setFilteredPlantedList(sortedData)
+            }
+
+        }
+    }, [sortingType, planted]);
+
+
+
+
 
     return (
+
+
         <div className="mb-10 mx-auto py-8 ">
 
 
@@ -44,7 +72,8 @@ const PlantedTrees = () => {
             <div className="space-y-4">
 
                 {
-                    planted.map(plant => (
+                    // planted.map(plant => (
+                    filteredPlantedList.map(plant => (
 
                         <div
                             key={plant.plantId}

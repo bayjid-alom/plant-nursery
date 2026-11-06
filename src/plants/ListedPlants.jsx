@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import PlantedTrees from '../listedPlants/PlantedTrees';
 import WishlistTrees from '../listedPlants/WishlistTrees';
 
 const ListedPlants = () => {
+
+    const [sortingType, setSortingType] = useState("Default")
 
 
     return (
@@ -20,7 +22,7 @@ const ListedPlants = () => {
                         role="button"
                         className="btn m-0 whitespace-nowrap min-h-0 h-9 w-40 border border-gray-200 rounded-lg bg-white text-gray-700 text-sm font-medium shadow-none hover:bg-gray-50 hover:border-gray-300"
                     >
-                        Sort by : Default
+                        Sort by : {sortingType}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="w-4 h-4"
@@ -37,9 +39,17 @@ const ListedPlants = () => {
                         tabIndex={0}
                         className="dropdown-content menu mt-1 w-40 rounded-lg bg-white border border-gray-100 p-2 shadow-md text-left text-sm text-gray-600 z-10"
                     >
-                        <li><a className=" whitespace-nowrap hover:bg-gray-100">Rating</a></li>
-                        <li><a className=" whitespace-nowrap hover:bg-gray-100">Price</a></li>
-                        <li><a className=" whitespace-nowrap hover:bg-gray-100">Plant Name</a></li>
+                        <li onClick={() => setSortingType("rating")}>
+                            <a className=" whitespace-nowrap hover:bg-gray-100">Rating</a>
+                        </li>
+
+                        <li onClick={() => setSortingType("price")}>
+                            <a className=" whitespace-nowrap hover:bg-gray-100">Price</a>
+                        </li>
+
+                        <li onClick={() => setSortingType("name")}>
+                            <a className=" whitespace-nowrap hover:bg-gray-100">Plant Name</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -58,11 +68,11 @@ const ListedPlants = () => {
                 </TabList>
 
                 <TabPanel>
-                    <PlantedTrees />
+                    <PlantedTrees sortingType={sortingType} />
                 </TabPanel>
 
                 <TabPanel>
-                    <WishlistTrees />
+                    <WishlistTrees sortingType={sortingType} />
                 </TabPanel>
             </Tabs>
 

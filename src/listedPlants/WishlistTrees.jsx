@@ -1,11 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { PlantContext } from '../context/PlantProvider';
 import { Link } from 'react-router';
 import { MapPin, Droplets, Sun, Leaf, Star } from 'lucide-react';
 
-const WishlistTrees = () => {
+const WishlistTrees = ({ sortingType }) => {
 
     const { wishlist } = useContext(PlantContext);
+    const [filterdWishlist, setFilteredWishlist] = useState(wishlist)
+
+    useEffect(() => {
+
+        if (sortingType) {
+            if (sortingType === "rating") {
+                const sortedData = [...wishlist].sort((a, b) => a.rating - b.rating)
+                setFilteredWishlist(sortedData)
+            }
+            else if (sortingType === "price") {
+                const sortedData = [...wishlist].sort((a, b) => a.price - b.price)
+                setFilteredWishlist(sortedData)
+            }
+            else if (sortingType === "name") {
+                const sortedData = [...wishlist].sort((a, b) => a.plantName.localeCompare(b.plantName))
+                setFilteredWishlist(sortedData)
+            }
+        }
+    }, [sortingType, wishlist])
+
 
     return (
         <div className="mb-10 mx-auto py-8 ">
@@ -50,7 +70,9 @@ const WishlistTrees = () => {
             <div className="space-y-4">
 
                 {
-                    wishlist.map(plant => (
+                    // wishlist.map(plant => (
+                    // sortedWishlist.map(plant => (
+                    filterdWishlist.map(plant => (
 
                         <div
                             key={plant.plantId}
