@@ -1,16 +1,21 @@
 import React, { createContext, useState } from 'react';
 import { toast } from 'react-toastify';
+import { addPlantedListToLocalDB, getAllPlantedTreesFromLocalDB } from '../utils/localDB';
 
 export const PlantContext = createContext()
 
 const PlantProvider = ({ children }) => {
-    const [planted, setPlanted] = useState([]);
+    // const [planted, setPlanted] = useState([]);
+    const [planted, setPlanted] = useState(() => getAllPlantedTreesFromLocalDB());
     const [wishlist, setWishlist] = useState([]);
 
 
 
 
     const handleMarkAsPlanted = (currentPlant) => {
+
+        // to add this plant in local storage
+        addPlantedListToLocalDB(currentPlant)
 
         const isExistPlant = planted.find(plant => plant.plantId == currentPlant.plantId);
         if (isExistPlant) {
