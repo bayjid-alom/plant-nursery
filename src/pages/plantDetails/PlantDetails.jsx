@@ -1,9 +1,13 @@
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { FaRegStar } from 'react-icons/fa';
+import { PlantContext } from '../../context/PlantProvider';
 
 const PlantDetails = () => {
+    const { handleMarkAsPlanted, handleAddToWishlist } = useContext(PlantContext);
+
+
     const { idOfPlant } = useParams();
     const plants = useLoaderData();
 
@@ -153,11 +157,16 @@ const PlantDetails = () => {
                         </span>
 
                         <div className="mt-5 flex flex-wrap items-center gap-3">
-                            <button className="btn w-fit border-none bg-green-700 px-5 text-white hover:bg-green-800">
+
+                            <button
+                                onClick={() => handleMarkAsPlanted(expectedPlant)}
+                                className="btn w-fit border-none bg-green-700 px-5 text-white hover:bg-green-800">
                                 Mark as Planted
                             </button>
 
-                            <button className="btn w-fit border border-green-700 bg-white px-5 text-green-700 hover:bg-green-50">
+                            <button
+                                onClick={() => handleAddToWishlist(expectedPlant)}
+                                className="btn w-fit border border-green-700 bg-white px-5 text-green-700 hover:bg-green-50">
                                 Add to Wishlist
                             </button>
                         </div>
